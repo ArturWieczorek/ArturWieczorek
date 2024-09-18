@@ -59,4 +59,3 @@ I am interested mostly in testing complex backend systems, platforms and APIs.
 ## About
 
 🌐 Website: [arturwieczorek.github.io/website](https://arturwieczorek.github.io/website/)  </br>
-📫 Email: artur.wieczorek.work@protonmail.com
