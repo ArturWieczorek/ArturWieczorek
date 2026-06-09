@@ -19,7 +19,6 @@ I'm a Software Test Engineer who is passionate about software and open source.
 I am interested mostly in testing complex backend systems, platforms and APIs.
 
 - 🔭 &nbsp; I enjoy coding, exploring new technologies, tools and solutions
-- 🧬 &nbsp; I would like to learn more about topics like Distributed Systems and Parallel Processing
 
 <h3>Tools and technologies I have used over the years:</h3>
 
@@ -50,11 +49,6 @@ I am interested mostly in testing complex backend systems, platforms and APIs.
   ![Atom](https://img.shields.io/badge/-Atom-333333?style=for-the-badge&logo=atom)  </br>
 
 <br/>
-
-<a href="https://github.com/ArturWieczorek">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ArturWieczorek&theme=dark&show_icons=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArturWieczorek&theme=dark&layout=compact" />
-</a>
 
 ## About
 
