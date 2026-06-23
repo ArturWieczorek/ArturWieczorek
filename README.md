@@ -1,7 +1,7 @@
-```bash
-artur@github:~$ whoami
-Artur Wieczorek :: Software Engineer in Test
+# Artur Wieczorek
+### Software Engineer in Test
 
+```bash
 artur@github:~$ cat about.txt
 I test complex backend systems, platforms and APIs - building the
 automation, tooling and performance pipelines that let teams ship
