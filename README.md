@@ -1,19 +1,20 @@
-<h1 align="center">Hey there! I'm Artur 👋</h1>
+```bash
+artur@github:~$ whoami
+Artur Wieczorek :: Software Engineer in Test
 
-<p align="center">
-  Software Test Engineer passionate about software quality and open source.<br/>
-  I focus on testing complex backend systems, platforms and APIs.
-</p>
+artur@github:~$ cat about.txt
+I test complex backend systems, platforms and APIs - building the
+automation, tooling and performance pipelines that let teams ship
+with confidence. 13+ years in QA, currently on Cardano @ IOG.
+```
 
----
-
-### 🔭 What I do
+## `> what I do`
 
 - Design and build automated test suites for backend services, platforms and APIs
-- Care about reliability, maintainable test infrastructure and clean tooling
-- Enjoy coding and exploring new technologies, tools and solutions
+- Performance profiling with historical regression tracking, plus the CI/CD tooling around it
+- Go one layer deeper: read the product source to find root causes, not just symptoms
 
-### 🛠️ Tools & technologies I've worked with over the years
+## `> toolbox`
 
 **Languages**
 
@@ -61,25 +62,20 @@
 ![Eclipse](https://img.shields.io/badge/-Eclipse-333333?style=for-the-badge&logo=eclipse-ide&logoColor=2C2255)
 ![Atom](https://img.shields.io/badge/-Atom-333333?style=for-the-badge)
 
-### 📊 GitHub Stats
+## `> git log --stat`
 
 <p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ArturWieczorek&show_icons=true&hide_border=true&count_private=true" alt="Artur's GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArturWieczorek&layout=compact&hide_border=true" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ArturWieczorek&show_icons=true&hide_border=true&count_private=true&title_color=7ee787&icon_color=5ccfe6&text_color=c9d4e0&bg_color=0a0e14" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArturWieczorek&layout=compact&hide_border=true&title_color=7ee787&text_color=c9d4e0&bg_color=0a0e14" alt="Top languages" />
 </p>
 
-### 🌐 Connect
+## `> connect`
 
 - **Website:** [arturwieczorek.github.io/website](https://arturwieczorek.github.io/website/)
 
 <!--
-  📌 Extra contact links — uncomment and fill in when ready:
+  Extra contact links - uncomment and fill in when ready:
 
-- **LinkedIn:** [linkedin.com/in/your-handle](https://www.linkedin.com/in/your-handle/)
-- **Email:** [you@example.com](mailto:you@example.com)
-- **Twitter/X:** [@your-handle](https://twitter.com/your-handle)
-
-  Or as badges:
-  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-handle/)
-  [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:you@example.com)
+- LinkedIn: https://www.linkedin.com/in/your-handle/
+- Email:    you@example.com
 -->
