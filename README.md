@@ -17,16 +17,16 @@
 
 **Languages**
 
-![Java](https://img.shields.io/badge/-Java-333333?style=for-the-badge&logo=Java&logoColor=007396)
+![Java](https://img.shields.io/badge/-Java-333333?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-333333?style=for-the-badge&logo=python)
-![C#](https://img.shields.io/badge/-C%23-333333?style=for-the-badge&logo=csharp&logoColor=00599C)
+![C#](https://img.shields.io/badge/-C%23-333333?style=for-the-badge)
 ![C++](https://img.shields.io/badge/-C++-333333?style=for-the-badge&logo=C%2B%2B&logoColor=00599C)
 ![Bash](https://img.shields.io/badge/-Bash-333333?style=for-the-badge&logo=gnubash)
 
 **Web & Frontend**
 
 ![HTML5](https://img.shields.io/badge/-HTML5-333333?style=for-the-badge&logo=HTML5)
-![CSS](https://img.shields.io/badge/-CSS-333333?style=for-the-badge&logo=CSS3&logoColor=1572B6)
+![CSS](https://img.shields.io/badge/-CSS-333333?style=for-the-badge&logo=css&logoColor=1572B6)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=for-the-badge&logo=javascript)
 ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=for-the-badge&logo=node.js)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=for-the-badge&logo=bootstrap&logoColor=563D7C)
@@ -56,10 +56,10 @@
 **Editors & IDEs**
 
 ![VIM](https://img.shields.io/badge/-VIM-333333?style=for-the-badge&logo=vim)
-![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=for-the-badge)
 ![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-333333?style=for-the-badge&logo=intellijidea&logoColor=white)
 ![Eclipse](https://img.shields.io/badge/-Eclipse-333333?style=for-the-badge&logo=eclipse-ide&logoColor=2C2255)
-![Atom](https://img.shields.io/badge/-Atom-333333?style=for-the-badge&logo=atom)
+![Atom](https://img.shields.io/badge/-Atom-333333?style=for-the-badge)
 
 ### 📊 GitHub Stats
 
