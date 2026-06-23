@@ -17,11 +17,11 @@
 
 **Languages**
 
-![Bash](https://img.shields.io/badge/-Bash-333333?style=for-the-badge&logo=gnubash)
-![Python](https://img.shields.io/badge/-Python-333333?style=for-the-badge&logo=python)
 ![Java](https://img.shields.io/badge/-Java-333333?style=for-the-badge&logo=Java&logoColor=007396)
+![Python](https://img.shields.io/badge/-Python-333333?style=for-the-badge&logo=python)
 ![C#](https://img.shields.io/badge/-C%23-333333?style=for-the-badge&logo=csharp&logoColor=00599C)
 ![C++](https://img.shields.io/badge/-C++-333333?style=for-the-badge&logo=C%2B%2B&logoColor=00599C)
+![Bash](https://img.shields.io/badge/-Bash-333333?style=for-the-badge&logo=gnubash)
 
 **Web & Frontend**
 
@@ -33,6 +33,13 @@
 
 **Testing**
 
+![JUnit](https://img.shields.io/badge/-JUnit-333333?style=for-the-badge&logo=junit5&logoColor=25A162)
+![TestNG](https://img.shields.io/badge/-TestNG-333333?style=for-the-badge)
+![Mockito](https://img.shields.io/badge/-Mockito-333333?style=for-the-badge)
+![Cucumber](https://img.shields.io/badge/-Cucumber-333333?style=for-the-badge&logo=cucumber&logoColor=23D96C)
+![JMeter](https://img.shields.io/badge/-JMeter-333333?style=for-the-badge&logo=apachejmeter&logoColor=D22128)
+![Jest](https://img.shields.io/badge/-Jest-333333?style=for-the-badge&logo=jest&logoColor=C21325)
+![pytest](https://img.shields.io/badge/-pytest-333333?style=for-the-badge&logo=pytest&logoColor=0A9EDC)
 ![Protractor](https://img.shields.io/badge/-Protractor-333333?style=for-the-badge&logo=protractor&logoColor=red)
 
 **Databases**
@@ -48,9 +55,10 @@
 
 **Editors & IDEs**
 
-![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)
-![Eclipse](https://img.shields.io/badge/-Eclipse-333333?style=for-the-badge&logo=eclipse-ide&logoColor=2C2255)
 ![VIM](https://img.shields.io/badge/-VIM-333333?style=for-the-badge&logo=vim)
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)
+![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-333333?style=for-the-badge&logo=intellijidea&logoColor=white)
+![Eclipse](https://img.shields.io/badge/-Eclipse-333333?style=for-the-badge&logo=eclipse-ide&logoColor=2C2255)
 ![Atom](https://img.shields.io/badge/-Atom-333333?style=for-the-badge&logo=atom)
 
 ### 📊 GitHub Stats
