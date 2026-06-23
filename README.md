@@ -72,10 +72,10 @@ with confidence. 13+ years in QA, currently on Cardano @ IOG.
 ## `> connect`
 
 - **Website:** [arturwieczorek.github.io/website](https://arturwieczorek.github.io/website/)
+- **Email:** [artur.wieczorek.work@gmail.com](mailto:artur.wieczorek.work@gmail.com)
 
 <!--
   Extra contact links - uncomment and fill in when ready:
 
 - LinkedIn: https://www.linkedin.com/in/your-handle/
-- Email:    you@example.com
 -->
