@@ -1,6 +1,8 @@
 # Artur Wieczorek
 ### Software Engineer in Test
 
+## `> about me`
+
 I test complex backend systems, platforms and APIs - building the automation, tooling and
 performance pipelines that let teams ship with confidence. 13+ years in QA, currently on
 Cardano @ IOG.
