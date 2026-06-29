@@ -1,17 +1,17 @@
-<svg width="470" height="300" viewBox="0 0 470 300" xmlns="http://www.w3.org/2000/svg" role="img">
-<rect width="470" height="300" rx="8" fill="#0a0e14"/>
+<svg width="560" height="300" viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" role="img">
+<rect width="560" height="300" rx="8" fill="#0a0e14"/>
 <text x="30" y="58" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="22" font-weight="700" fill="#7ee787">&gt; git stats --author Artur Wieczorek</text>
-<line x1="30" y1="80" x2="440" y2="80" stroke="#2c3a4d" stroke-width="1.5"/>
+<line x1="30" y1="80" x2="530" y2="80" stroke="#2c3a4d" stroke-width="1.5"/>
 <text x="30" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Public repos</text>
-<text x="440" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">23</text>
+<text x="530" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">23</text>
 <text x="30" y="152" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Commits (last yr)</text>
-<text x="440" y="152" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">666</text>
+<text x="530" y="152" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">668</text>
 <text x="30" y="182" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Pull requests</text>
-<text x="440" y="182" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">131</text>
+<text x="530" y="182" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">131</text>
 <text x="30" y="212" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Issues</text>
-<text x="440" y="212" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">145</text>
+<text x="530" y="212" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">145</text>
 <text x="30" y="242" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Contributed to</text>
-<text x="440" y="242" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">3</text>
+<text x="530" y="242" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">3</text>
 <text x="30" y="272" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Followers</text>
-<text x="440" y="272" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">3</text>
+<text x="530" y="272" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">3</text>
 </svg>
