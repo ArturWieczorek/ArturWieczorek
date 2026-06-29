@@ -61,8 +61,8 @@ Cardano @ IOG.
 ## `> git log --stat`
 
 <p>
-  <img height="165" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/github-stats.svg" alt="GitHub stats - refreshing on next scheduled run" />
-  <img height="165" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/top-langs.svg" alt="Top languages - refreshing on next scheduled run" />
+  <img height="240" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/github-stats.svg" alt="GitHub stats - refreshing on next scheduled run" />
+  <img height="240" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/top-langs.svg" alt="Top languages - refreshing on next scheduled run" />
 </p>
 
 ## `> connect`

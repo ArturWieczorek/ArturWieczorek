@@ -24,7 +24,7 @@ BG = "#0a0e14"
 GREEN = "#7ee787"   # prompt / headings
 CYAN = "#5ccfe6"    # numbers / accent
 TEXT = "#c9d4e0"    # labels
-MUTED = "#2c3a4d"   # bar track
+MUTED = "#2c3a4d"   # bar track / divider
 MONO = "'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace"
 
 API = "https://api.github.com/graphql"
@@ -37,13 +37,12 @@ query($login:String!, $after:String){
     followers { totalCount }
     pullRequests { totalCount }
     issues { totalCount }
+    publicRepos: repositories(ownerAffiliations:OWNER, privacy:PUBLIC) { totalCount }
     repositoriesContributedTo(contributionTypes:[COMMIT,PULL_REQUEST,ISSUE,REPOSITORY]) { totalCount }
     contributionsCollection { totalCommitContributions restrictedContributionsCount }
     repositories(first:100, after:$after, ownerAffiliations:OWNER, isFork:false, orderBy:{field:STARGAZERS, direction:DESC}){
-      totalCount
       pageInfo { hasNextPage endCursor }
       nodes {
-        stargazerCount
         languages(first:10, orderBy:{field:SIZE, direction:DESC}){
           edges { size node { name color } }
         }
@@ -71,7 +70,6 @@ def graphql(token, login, after=None):
 
 
 def collect(token, login):
-    stars = 0
     langs = {}            # name -> [size, color]
     base = None
     after = None
@@ -81,7 +79,6 @@ def collect(token, login):
             base = user
         repos = user["repositories"]
         for node in repos["nodes"]:
-            stars += node["stargazerCount"]
             for edge in node["languages"]["edges"]:
                 n = edge["node"]["name"]
                 slot = langs.setdefault(n, [0, edge["node"]["color"]])
@@ -94,7 +91,7 @@ def collect(token, login):
     cc = base["contributionsCollection"]
     stats = {
         "name": base.get("name") or base["login"],
-        "Stars earned": stars,
+        "Public repos": base["publicRepos"]["totalCount"],
         "Commits (last yr)": cc["totalCommitContributions"] + cc.get("restrictedContributionsCount", 0),
         "Pull requests": base["pullRequests"]["totalCount"],
         "Issues": base["issues"]["totalCount"],
@@ -110,51 +107,51 @@ def num(n):
 
 
 def stats_card(stats):
-    rows = ["Stars earned", "Commits (last yr)", "Pull requests",
+    rows = ["Public repos", "Commits (last yr)", "Pull requests",
             "Issues", "Contributed to", "Followers"]
-    w, h = 440, 210
-    pad = 24
-    y0, step = 78, 21
+    w, h = 470, 300
+    pad = 30
+    y0, step = 122, 30
     out = [
         f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" role="img">',
-        f'<rect width="{w}" height="{h}" rx="6" fill="{BG}"/>',
-        f'<text x="{pad}" y="40" font-family="{MONO}" font-size="15" font-weight="700" fill="{GREEN}">&gt; git stats --author {escape(stats["name"])}</text>',
-        f'<line x1="{pad}" y1="54" x2="{w-pad}" y2="54" stroke="{MUTED}" stroke-width="1"/>',
+        f'<rect width="{w}" height="{h}" rx="8" fill="{BG}"/>',
+        f'<text x="{pad}" y="58" font-family="{MONO}" font-size="22" font-weight="700" fill="{GREEN}">&gt; git stats --author {escape(stats["name"])}</text>',
+        f'<line x1="{pad}" y1="80" x2="{w-pad}" y2="80" stroke="{MUTED}" stroke-width="1.5"/>',
     ]
     for i, label in enumerate(rows):
         y = y0 + i * step
-        out.append(f'<text x="{pad}" y="{y}" font-family="{MONO}" font-size="13" fill="{TEXT}">{label}</text>')
-        out.append(f'<text x="{w-pad}" y="{y}" font-family="{MONO}" font-size="13" font-weight="700" fill="{CYAN}" text-anchor="end">{num(stats[label])}</text>')
+        out.append(f'<text x="{pad}" y="{y}" font-family="{MONO}" font-size="18" fill="{TEXT}">{label}</text>')
+        out.append(f'<text x="{w-pad}" y="{y}" font-family="{MONO}" font-size="18" font-weight="700" fill="{CYAN}" text-anchor="end">{num(stats[label])}</text>')
     out.append("</svg>")
     return "\n".join(out) + "\n"
 
 
 def langs_card(top):
-    w, h = 340, 210
-    pad = 20
-    y0, step = 74, 22
-    track_x, track_w = 120, 150
+    w, h = 390, 300
+    pad = 28
+    y0, step = 118, 30
+    track_x, track_w, bar_h = 160, 190, 11
     total = sum(size for _, (size, _) in top) or 1
     out = [
         f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" role="img">',
-        f'<rect width="{w}" height="{h}" rx="6" fill="{BG}"/>',
-        f'<text x="{pad}" y="40" font-family="{MONO}" font-size="15" font-weight="700" fill="{GREEN}">&gt; top languages</text>',
-        f'<line x1="{pad}" y1="54" x2="{w-pad}" y2="54" stroke="{MUTED}" stroke-width="1"/>',
+        f'<rect width="{w}" height="{h}" rx="8" fill="{BG}"/>',
+        f'<text x="{pad}" y="58" font-family="{MONO}" font-size="22" font-weight="700" fill="{GREEN}">&gt; top languages</text>',
+        f'<line x1="{pad}" y1="80" x2="{w-pad}" y2="80" stroke="{MUTED}" stroke-width="1.5"/>',
     ]
     if top:
         top_size = top[0][1][0] or 1
         for i, (name, (size, color)) in enumerate(top):
             y = y0 + i * step
             pct = size * 100.0 / total
-            bar = max(2, round(track_w * size / top_size))
+            bar = max(3, round(track_w * size / top_size))
             color = color or CYAN
-            disp = name if len(name) <= 11 else name[:10] + "."
-            out.append(f'<text x="{pad}" y="{y}" font-family="{MONO}" font-size="12" fill="{TEXT}">{escape(disp)}</text>')
-            out.append(f'<rect x="{track_x}" y="{y-9}" width="{track_w}" height="8" rx="4" fill="{MUTED}"/>')
-            out.append(f'<rect x="{track_x}" y="{y-9}" width="{bar}" height="8" rx="4" fill="{color}"/>')
-            out.append(f'<text x="{w-pad}" y="{y}" font-family="{MONO}" font-size="12" font-weight="700" fill="{CYAN}" text-anchor="end">{pct:.0f}%</text>')
+            disp = name if len(name) <= 12 else name[:11] + "."
+            out.append(f'<text x="{pad}" y="{y}" font-family="{MONO}" font-size="17" fill="{TEXT}">{escape(disp)}</text>')
+            out.append(f'<rect x="{track_x}" y="{y-13}" width="{track_w}" height="{bar_h}" rx="{bar_h/2}" fill="{MUTED}"/>')
+            out.append(f'<rect x="{track_x}" y="{y-13}" width="{bar}" height="{bar_h}" rx="{bar_h/2}" fill="{color}"/>')
+            out.append(f'<text x="{w-pad}" y="{y}" font-family="{MONO}" font-size="17" font-weight="700" fill="{CYAN}" text-anchor="end">{pct:.0f}%</text>')
     else:
-        out.append(f'<text x="{pad}" y="{y0}" font-family="{MONO}" font-size="12" fill="{TEXT}">no language data</text>')
+        out.append(f'<text x="{pad}" y="{y0}" font-family="{MONO}" font-size="17" fill="{TEXT}">no language data</text>')
     out.append("</svg>")
     return "\n".join(out) + "\n"
 
