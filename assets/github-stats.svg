@@ -5,7 +5,7 @@
 <text x="30" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Public repos</text>
 <text x="530" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">23</text>
 <text x="30" y="152" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Commits (last yr)</text>
-<text x="530" y="152" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">669</text>
+<text x="530" y="152" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">671</text>
 <text x="30" y="182" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Pull requests</text>
 <text x="530" y="182" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" font-weight="700" fill="#5ccfe6" text-anchor="end">131</text>
 <text x="30" y="212" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="18" fill="#c9d4e0">Issues</text>
