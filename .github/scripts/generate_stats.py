@@ -109,7 +109,7 @@ def num(n):
 def stats_card(stats):
     rows = ["Public repos", "Commits (last yr)", "Pull requests",
             "Issues", "Contributed to", "Followers"]
-    w, h = 470, 300
+    w, h = 560, 300
     pad = 30
     y0, step = 122, 30
     out = [
