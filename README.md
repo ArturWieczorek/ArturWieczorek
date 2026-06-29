@@ -58,8 +58,6 @@ Cardano @ IOG.
 ![Buildkite](https://img.shields.io/badge/-Buildkite-333333?style=for-the-badge&logo=buildkite&logoColor=14CC80)
 ![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-333333?style=for-the-badge&logo=githubactions&logoColor=2088FF)
 
-## `> git log --stat`
-
 <p>
   <img height="240" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/github-stats.svg" alt="GitHub stats - refreshing on next scheduled run" />
   <img height="240" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/top-langs.svg" alt="Top languages - refreshing on next scheduled run" />
