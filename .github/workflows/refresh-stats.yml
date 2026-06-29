@@ -1,9 +1,9 @@
 name: Refresh GitHub stats cards
 
-# Fetches the github-readme-stats cards and commits them as static SVGs so the
-# profile never shows broken image icons when the stats service is down or rate
-# limited. If a fetch fails or returns an error card, the previous good SVG is
-# kept (keep-last-good) instead of being overwritten.
+# Generates the profile stat cards as static SVGs straight from the GitHub API
+# (no third-party render service) and commits them. If the API call fails the
+# generator keeps the previously committed cards, so the profile never shows
+# broken icons.
 
 on:
   schedule:
@@ -24,43 +24,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch cards (keep last good on failure)
+      - name: Generate cards
         env:
-          USER: ArturWieczorek
-        run: |
-          set -u
-          mkdir -p assets
-
-          STATS_URL="https://github-readme-stats.vercel.app/api?username=${USER}&show_icons=true&hide_border=true&count_private=true&title_color=7ee787&icon_color=5ccfe6&text_color=c9d4e0&bg_color=0a0e14"
-          LANGS_URL="https://github-readme-stats.vercel.app/api/top-langs/?username=${USER}&layout=compact&hide_border=true&title_color=7ee787&text_color=c9d4e0&bg_color=0a0e14"
-
-          # fetch <dest> <url> <required-marker>
-          fetch() {
-            dest="$1"; url="$2"; marker="$3"; tmp="$(mktemp)"
-            for i in 1 2 3 4 5; do
-              code="$(curl -sS --max-time 25 -o "$tmp" -w '%{http_code}' "$url" || echo 000)"
-              if [ "$code" = "200" ] \
-                 && grep -q "</svg>" "$tmp" \
-                 && grep -qi "$marker" "$tmp" \
-                 && ! grep -qi "Something went wrong" "$tmp"; then
-                mv "$tmp" "$dest"
-                echo "OK  $dest (try $i, $(wc -c < "$dest") bytes)"
-                return 0
-              fi
-              echo "FAIL $dest try $i: http=$code"
-              sleep 5
-            done
-            rm -f "$tmp"
-            echo "KEEP $dest (upstream unavailable, keeping last committed version)"
-            return 0
-          }
-
-          fetch assets/github-stats.svg "$STATS_URL" "GitHub Stats"
-          fetch assets/top-langs.svg   "$LANGS_URL" "Most Used Languages"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: python3 .github/scripts/generate_stats.py
 
       - name: Commit if changed
         run: |
-          set -e
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git diff --quiet -- assets; then
