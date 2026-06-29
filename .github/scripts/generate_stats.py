@@ -127,10 +127,10 @@ def stats_card(stats):
 
 
 def langs_card(top):
-    w, h = 500, 300
+    w, h = 430, 300
     pad = 28
     y0, step = 116, 33
-    track_x, track_w, bar_h = 150, 300, 16
+    track_x, track_w, bar_h = 135, 225, 16
     total = sum(size for _, (size, _) in top) or 1
     out = [
         f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" role="img">',
