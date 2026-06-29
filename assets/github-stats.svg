@@ -1,0 +1,6 @@
+<svg width="467" height="165" viewBox="0 0 467 165" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  <rect x="0" y="0" width="467" height="165" rx="6" fill="#0a0e14"/>
+  <text x="25" y="42" font-family="'Courier New',monospace" font-size="18" font-weight="700" fill="#7ee787">&gt; git log --stat</text>
+  <text x="25" y="84" font-family="'Courier New',monospace" font-size="13" fill="#c9d4e0">GitHub stats are being refreshed.</text>
+  <text x="25" y="108" font-family="'Courier New',monospace" font-size="13" fill="#5ccfe6">Updated automatically on the next scheduled run.</text>
+</svg>

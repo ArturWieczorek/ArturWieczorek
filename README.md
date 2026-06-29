@@ -49,23 +49,20 @@ Cardano @ IOG.
 
 **Tooling & Version Control**
 
+![VIM](https://img.shields.io/badge/-VIM-333333?style=for-the-badge&logo=vim)
+![VS Code](https://img.shields.io/badge/-VS%20Code-333333?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
+![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-333333?style=for-the-badge&logo=intellijidea&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-333333?style=for-the-badge&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=for-the-badge&logo=github)
-![Markdown](https://img.shields.io/badge/-Markdown-333333?style=for-the-badge&logo=markdown)
-
-**Editors & IDEs**
-
-![VIM](https://img.shields.io/badge/-VIM-333333?style=for-the-badge&logo=vim)
-![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=for-the-badge)
-![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-333333?style=for-the-badge&logo=intellijidea&logoColor=white)
-![Eclipse](https://img.shields.io/badge/-Eclipse-333333?style=for-the-badge&logo=eclipse-ide&logoColor=2C2255)
-![Atom](https://img.shields.io/badge/-Atom-333333?style=for-the-badge)
+![Jenkins](https://img.shields.io/badge/-Jenkins-333333?style=for-the-badge&logo=jenkins&logoColor=D24939)
+![Buildkite](https://img.shields.io/badge/-Buildkite-333333?style=for-the-badge&logo=buildkite&logoColor=14CC80)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-333333?style=for-the-badge&logo=githubactions&logoColor=2088FF)
 
 ## `> git log --stat`
 
 <p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ArturWieczorek&show_icons=true&hide_border=true&count_private=true&title_color=7ee787&icon_color=5ccfe6&text_color=c9d4e0&bg_color=0a0e14" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArturWieczorek&layout=compact&hide_border=true&title_color=7ee787&text_color=c9d4e0&bg_color=0a0e14" alt="Top languages" />
+  <img height="165" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/github-stats.svg" alt="GitHub stats - refreshing on next scheduled run" />
+  <img height="165" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/top-langs.svg" alt="Top languages - refreshing on next scheduled run" />
 </p>
 
 ## `> connect`
