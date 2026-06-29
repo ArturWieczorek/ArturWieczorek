@@ -26,7 +26,10 @@ jobs:
 
       - name: Generate cards
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Uses a personal access token (STATS_TOKEN secret) if present, so
+          # private-repo activity is included; otherwise falls back to the
+          # built-in token, which sees public data only.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         run: python3 .github/scripts/generate_stats.py
 
