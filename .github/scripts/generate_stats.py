@@ -129,8 +129,8 @@ def stats_card(stats):
 def langs_card(top):
     w, h = 390, 300
     pad = 28
-    y0, step = 118, 30
-    track_x, track_w, bar_h = 160, 190, 11
+    y0, step = 116, 33
+    track_x, track_w, bar_h = 148, 202, 16
     total = sum(size for _, (size, _) in top) or 1
     out = [
         f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" role="img">',
@@ -147,8 +147,8 @@ def langs_card(top):
             color = color or CYAN
             disp = name if len(name) <= 12 else name[:11] + "."
             out.append(f'<text x="{pad}" y="{y}" font-family="{MONO}" font-size="17" fill="{TEXT}">{escape(disp)}</text>')
-            out.append(f'<rect x="{track_x}" y="{y-13}" width="{track_w}" height="{bar_h}" rx="{bar_h/2}" fill="{MUTED}"/>')
-            out.append(f'<rect x="{track_x}" y="{y-13}" width="{bar}" height="{bar_h}" rx="{bar_h/2}" fill="{color}"/>')
+            out.append(f'<rect x="{track_x}" y="{y-14}" width="{track_w}" height="{bar_h}" rx="{bar_h/2}" fill="{MUTED}"/>')
+            out.append(f'<rect x="{track_x}" y="{y-14}" width="{bar}" height="{bar_h}" rx="{bar_h/2}" fill="{color}"/>')
             out.append(f'<text x="{w-pad}" y="{y}" font-family="{MONO}" font-size="17" font-weight="700" fill="{CYAN}" text-anchor="end">{pct:.0f}%</text>')
     else:
         out.append(f'<text x="{pad}" y="{y0}" font-family="{MONO}" font-size="17" fill="{TEXT}">no language data</text>')
