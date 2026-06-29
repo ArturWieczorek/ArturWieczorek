@@ -56,11 +56,11 @@ Cardano @ IOG.
 ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=for-the-badge&logo=github)
 ![Jenkins](https://img.shields.io/badge/-Jenkins-333333?style=for-the-badge&logo=jenkins&logoColor=D24939)
 ![Buildkite](https://img.shields.io/badge/-Buildkite-333333?style=for-the-badge&logo=buildkite&logoColor=14CC80)
-![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-333333?style=for-the-badge&logo=githubactions&logoColor=2088FF)
+![GH Actions](https://img.shields.io/badge/-GH%20Actions-333333?style=for-the-badge&logo=githubactions&logoColor=2088FF)
 
 <p>
-  <img height="230" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/github-stats.svg" alt="GitHub stats - refreshing on next scheduled run" />
-  <img height="230" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/top-langs.svg" alt="Top languages - refreshing on next scheduled run" />
+  <img height="225" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/github-stats.svg" alt="GitHub stats - refreshing on next scheduled run" />
+  <img height="225" src="https://raw.githubusercontent.com/ArturWieczorek/ArturWieczorek/main/assets/top-langs.svg" alt="Top languages - refreshing on next scheduled run" />
 </p>
 
 ## `> connect`
