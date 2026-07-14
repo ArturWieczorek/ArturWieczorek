@@ -65,5 +65,5 @@ Cardano @ IOG.
 
 ## `> connect`
 
-- **Website:** [arturwieczorek.github.io/website](https://arturwieczorek.github.io/website/)
-- **Email:** [artur.wieczorek.work@gmail.com](mailto:artur.wieczorek.work@gmail.com)
+- **Website:** [arturwieczorek.com](https://arturwieczorek.com/)
+- **Email:** [artur@arturwieczorek.com](mailto:artur@arturwieczorek.com)
