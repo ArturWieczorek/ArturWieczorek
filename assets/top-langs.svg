@@ -12,7 +12,7 @@
 <text x="472" y="149" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="17" font-weight="700" fill="#5ccfe6" text-anchor="end">20%</text>
 <text x="28" y="182" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="17" fill="#c9d4e0">Java</text>
 <rect x="150" y="168" width="295" height="16" rx="8.0" fill="#2c3a4d"/>
-<rect x="150" y="168" width="54" height="16" rx="8.0" fill="#b07219"/>
+<rect x="150" y="168" width="57" height="16" rx="8.0" fill="#b07219"/>
 <text x="472" y="182" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="17" font-weight="700" fill="#5ccfe6" text-anchor="end">10%</text>
 <text x="28" y="215" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="17" fill="#c9d4e0">JavaScript</text>
 <rect x="150" y="201" width="295" height="16" rx="8.0" fill="#2c3a4d"/>
