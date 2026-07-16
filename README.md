@@ -7,6 +7,9 @@ I test complex backend systems, platforms and APIs - building the automation, to
 performance pipelines that let teams ship with confidence. 13+ years in QA, currently on
 Cardano @ IOG.
 
+MSc in Engineering, Technical Physics - the physics habit of chasing root causes is how I
+approach testing too.
+
 ## `> what I do`
 
 - Design and build automated test suites for backend services, platforms and APIs
